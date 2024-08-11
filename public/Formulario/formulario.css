@@ -1,0 +1,21 @@
+@media (max-width: 576px) {
+  .d-flex.justify-content-between.align-items-center {
+    flex-direction: column;
+  }
+  .ml-3 {
+    margin-left: 0 !important;
+    margin-top: 20px;
+  }
+  .signature {
+    width: 100% !important;
+    height: auto !important;
+  }
+  #signature-canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+  #foto-preview {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}

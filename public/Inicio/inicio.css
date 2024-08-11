@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    overflow-x: hidden; /* Ensure no horizontal scroll */
+}
+
+.header {
+    background-color: #00a6e9; /* Color proporcionado */
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.profile-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.info-card {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 15px;
+}
+
+.info-card strong {
+    color: #007bff;
+}
+
+.info-card p {
+    margin-bottom: 0;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #00a6e9; /* Color proporcionado */
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.services {
+    margin-top: 20px;
+}
+
+.service-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 0px; /* Espaciado entre filas */
+}
+
+.service-row {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio equitativamente */
+    gap: 0px; /* Espaciado entre tarjetas */
+}
+
+.service-icon {
+    text-align: center;
+    flex: 1;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+
+    color: rgb(0, 0, 0);
+    background-color: #ffffff; /* Color predeterminado */
+    cursor: pointer;
+}
+
+.service-icon img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.service-icon p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    font-size: 11px; /* Tamaño del texto */
+    line-height: 1.5; /* No importe la caja */
+ /* Tamaño del texto */
+}
+
+.documents {
+    background-color: #007bff;
+    
+}
+
+.vehicles {
+    background-color: #ff9f1a;
+}
+
+.health {
+    background-color: #ff3366;
+}
+
+.work {
+    background-color: #66bb6a;
+}
+
+.appointments {
+    background-color: #26a69a;
+}
+
+.payments {
+    background-color: #78909c;
+}
+
+.tramites {
+    background-color: #5b6dcd;
+}
+
+.hijos {
+    background-color: #f8c045;
+}
+
+.navbar {
+    background-color: white;
+    padding: 10px 0;
+    width: 100%; /* Ensure full width */
+    position: fixed;
+    bottom: 0;
+}
+
+.nav-link {
+    font-size: 14px;
+    color: #007bff;
+}
+
+.container {
+    padding-bottom: 60px; /* Ensure space for navbar */
+}
+
+.scrollable-content {
+    max-height: calc(100vh - 60px); /* Adjust for header and navbar */
+    overflow-y: auto;
+}

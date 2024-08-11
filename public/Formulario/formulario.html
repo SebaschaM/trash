@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi ARG</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="formulario.css" />
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=0">
+    <meta name="display" content="standalone">
+    <meta name="theme-color" content="#37bbed">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Mi Argentina">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="description" content="Regístrate para obtener tu DNI digital">
+    <link rel="apple-touch-icon" href="/Logo192.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/Logo192.png">
+  </head>
+  <body>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <h3>Formulario</h3>
+          <hr />
+          <form id="form" enctype="multipart/form-data">
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombres</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  name="nombre"
+                  required
+                  oninput="this.value = this.value.replace(/\s+/g, ' ').toUpperCase(); if (this.value.split(' ').length > 2) { this.value = this.value.split(' ').slice(0, 2).join(' '); }"
+                  maxlength="15"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="apellido" class="form-label">Apellidos</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="apellido"
+                  name="apellido"
+                  required
+                  oninput="this.value = this.value.toUpperCase()"
+                  maxlength="15"
+                />
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="sexo" class="form-label">Sexo</label>
+                <select class="form-select" id="sexo" name="sexo" required>
+                  <option value="">Seleccione su Sexo</option>
+                  <option value="Masculino">M</option>
+                  <option value="Femenino">F</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="nacionalidad" class="form-label"
+                  >Nacionalidad</label
+                >
+                <select
+                  class="form-select"
+                  id="nacionalidad"
+                  name="nacionalidad"
+                  required
+                >
+                  <option value="">Seleccione su Nacionalidad</option>
+                  <option value="Argentina">Argentina</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="fechaEmision" class="form-label"
+                  >Fecha de Emisión</label
+                >
+                <input
+                  type="date"
+                  class="form-control"
+                  id="fechaEmision"
+                  name="fechaEmision"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="fechaNacimiento" class="form-label"
+                  >Fecha de Nacimiento</label
+                >
+                <input
+                  type="date"
+                  class="form-control"
+                  id="fechaNacimiento"
+                  name="fechaNacimiento"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="domicilio" class="form-label">Dirección</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="domicilio"
+                  name="domicilio"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="lugarNacimiento" class="form-label"
+                  >Lugar de Nacimiento</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lugarNacimiento"
+                  name="lugarNacimiento"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-4">
+                <label for="ejemplar" class="form-label">Ejemplar</label>
+                <select
+                  class="form-select"
+                  id="ejemplar"
+                  name="ejemplar"
+                  required
+                >
+                  <option value="">Seleccione su Ejemplar</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label for="nro_tramite" class="form-label"
+                  >Número de Trámite</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nro_tramite"
+                  name="nro_tramite"
+                  oninput="if(this.value.length===11) this.value+='\n'"
+                  maxlength="15"
+                  required
+                />
+              </div>
+              <div class="col-md-4">
+                <label for="dniNumero" class="form-label">DNI</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="dniNumero"
+                  name="dniNumero"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\d{2})\.?(\d{3})\.?(\d{3})/, '$1.$2.$3').replace(/(\.)?(\d{1,2})$/, '$1$2')"
+                  maxlength="10"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <span for="firma" class="d-block pb-2">Firma digital aquí</span>
+                <div class="signature mb-2" style="width: 200px; height: 200px">
+                  <canvas
+                    id="signature-canvas"
+                    width="200"
+                    height="200"
+                    style="border: 1px dashed red"
+                    required
+                  ></canvas>
+                </div>
+              </div>
+              <div class="ml-3">
+                <input
+                  title="Foto"
+                  type="file"
+                  id="foto"
+                  name="foto"
+                  accept="image/*"
+                  onchange="previewFile()"
+                  required
+                />
+                <img
+                  id="foto-preview"
+                  src=""
+                  alt="Vista previa de la foto"
+                  style="max-width: 200px; max-height: 200px; display: none"
+                />
+              </div>
+            </div>
+
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="generarDNI()"
+            >
+              Generar DNI
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="jspdf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+    <script src="formulario.js"></script>
+    <script src="../utils/verifyLoggedUser.js"></script>
+  </body>
+</html>

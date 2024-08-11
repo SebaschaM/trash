@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* No quiero que haya scroll */
+}
+
+.header {
+    background-color: #1662b3;
+    color: white;
+    padding: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: left;
+    padding-top: 12px;
+    padding-left: 50px;
+    position: relative;
+}
+
+.header .back-button {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card-header {
+    background-color: #3578e5;
+    padding: 10px;
+}
+
+.card-header .btn-link {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 0;
+}
+
+.card-header h5 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    margin-left: -100px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-control {
+    text-align: center;
+    border-bottom-color: 1px solid #ccc;
+}
+
+.btn-primary {
+    background-color: #3578e5;
+    border: none;
+    border-radius: 50px; /* Hacer el botón más redondo */
+}
+
+.btn-primary:hover {
+    background-color: #285ba1;
+}
+
+.text-primary {
+    color: #3578e5;
+}
+
+.text-primary:hover {
+    text-decoration: underline;
+}
+

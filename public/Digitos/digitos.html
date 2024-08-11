@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DNI Digital</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="digitos.css" />
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=0">
+    <meta name="display" content="standalone">
+    <meta name="theme-color" content="#37bbed">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Mi Argentina">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="description" content="Regístrate para obtener tu DNI digital">
+    <link rel="apple-touch-icon" href="/Logo192.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/Logo192.png">
+  </head>
+  <body>
+    <div class="header">
+      <button id="back-button" class="back-button">&larr;</button>
+      <h3>DNI Digital</h3>
+    </div>
+    <div
+      class="container d-flex flex-column justify-content-center align-items-center min-vh-100"
+    >
+      <div class="card shadow-lg login-card">
+        <div class="card-body">
+          <h6 class="card-title text-center">Ingresá tu PIN de acceso</h6>
+          <div class="form-group">
+            <input
+              type="password"
+              class="form-control"
+              id="pin"
+              maxlength="6"
+              placeholder="123456"
+              required
+            />
+          </div>
+          <button id="login-button" class="btn btn-primary btn-block">
+            Ingresar
+          </button>
+          <a href="#" class="d-block text-center mt-3 text-primary"
+            >Olvidé mi PIN</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../utils/verifyLoggedUser.js"></script>
+    <script src="digitos.js"></script>
+  </body>
+</html>

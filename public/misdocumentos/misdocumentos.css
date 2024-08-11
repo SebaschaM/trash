@@ -1,0 +1,238 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 10px;
+ }
+
+
+ /* test*/
+ .Docs_headerContainer {
+    -webkit-font-smoothing: antialiased;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    cursor: url(chrome-extension://ckejmhbmlajgoklhgbapkiccekfoccmk/assets/pictos/cursor.png) 17 17, pointer !important;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    background: #3772bc;
+    border-radius: 0 0 10px 10px;
+    gap: 15px;
+    height: 185px;
+    padding-top: 30px;
+    width: 100%;
+ }
+
+ .Docs_headerButtons {
+    -webkit-font-smoothing: antialiased;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    cursor: url(chrome-extension://ckejmhbmlajgoklhgbapkiccekfoccmk/assets/pictos/cursor.png) 17 17, pointer !important;
+    scrollbar-width: none;
+    align-items: center;
+    display: flex;
+    margin-left: 10px;
+ }
+
+
+ .Docs_headerOps {
+    -webkit-font-smoothing: antialiased;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    color: #333;
+    cursor: url(chrome-extension://ckejmhbmlajgoklhgbapkiccekfoccmk/assets/pictos/cursor.png) 17 17, pointer !important;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin: 0 30px 0 13px;
+}
+
+.Docs_headerTitle {
+    -webkit-font-smoothing: antialiased;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: url(chrome-extension://ckejmhbmlajgoklhgbapkiccekfoccmk/assets/pictos/cursor.png) 17 17, pointer !important;
+    scrollbar-width: none;
+    color: #fff;
+    font-weight: 600;
+    margin-top: -1px;
+} 
+
+.Docs_headerTitleMi {
+    -webkit-font-smoothing: antialiased;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-weight: 600;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: url(chrome-extension://ckejmhbmlajgoklhgbapkiccekfoccmk/assets/pictos/cursor.png) 17 17, pointer !important;
+    scrollbar-width: none;
+    color: #fff;
+    font-size: 15px;
+    }
+
+.Docs_headerLabelContainer {
+    -webkit-font-smoothing: antialiased;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    color: #333;
+    cursor: url(chrome-extension://ckejmhbmlajgoklhgbapkiccekfoccmk/assets/pictos/cursor.png) 17 17, pointer !important;
+    scrollbar-width: none;
+    display: flex;
+    margin: 0 20px 10px;
+}
+
+.Docs_headerLabelContainer>p {
+    -webkit-font-smoothing: antialiased;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: url(chrome-extension://ckejmhbmlajgoklhgbapkiccekfoccmk/assets/pictos/cursor.png) 17 17, pointer !important;
+    scrollbar-width: none;
+    color: #fff;
+    flex-basis: 75%;
+    font-size: 23px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.Docs_headerLabelImgContainer {
+    -webkit-font-smoothing: antialiased;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    cursor: url(chrome-extension://ckejmhbmlajgoklhgbapkiccekfoccmk/assets/pictos/cursor.png) 17 17, pointer !important;
+    scrollbar-width: none;
+    flex-basis: 25%;
+}
+
+.Docs_headerLabelImgContainer>img {
+    -webkit-font-smoothing: antialiased;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    cursor: url(chrome-extension://ckejmhbmlajgoklhgbapkiccekfoccmk/assets/pictos/cursor.png) 17 17, pointer !important;
+    scrollbar-width: none;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    width: 97%;
+}
+
+ /* test*/
+.back-button {
+    font-size: 1.5em;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header-text {
+    margin-left: 10px;
+}
+
+.header-text h1, .header-text p {
+    margin: 0;
+}
+
+.main-content {
+    margin-top: 20px;
+}
+
+.main-content h2 {
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.card-header img {
+    width: 43px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.btn-primary {
+    background-color: #3772bc;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.btn-outline-primary {
+    border: 2px solid #3772bc;
+    background: none;
+    color: #3772bc;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.card-body a {
+    color: #529dec;
+    text-decoration: none;
+}
+
+.card-body a:hover {
+    text-decoration: underline;
+}
+
+.change-device {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.navbar {
+    box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+}
+
+.nav-link {
+    color: #007bff;
+    text-align: center;
+}

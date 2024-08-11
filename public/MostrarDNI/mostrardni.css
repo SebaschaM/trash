@@ -1,0 +1,195 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container-card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  border-radius: 14px;
+  max-width: 350px;
+  max-height: 450px;
+}
+
+.container {
+  border-radius: 14px;
+  margin: 20px auto;
+  padding-top: 20px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  perspective: 1000px;
+  margin: 20px auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card-front {
+  background-color: #fff;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #fff;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.dni-card canvas {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.header {
+  background-color: #1662b3;
+  color: white;
+  padding: 10px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  text-align: left;
+  padding-top: 12px;
+  padding-left: 50px;
+  position: relative;
+}
+
+.header .back-button {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.footer button,
+.footer a {
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  flex: 1;
+  border: 1px solid #a5aeb6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer button i,
+.qr-section button i {
+  margin-right: 5px;
+  color: #1e90ff; /* Color azul para los íconos */
+}
+
+.footer .btn-deactivate {
+  background-color: transparent;
+  border: 1px solid #a5aeb6;
+}
+
+.qr-section {
+  text-align: left;
+}
+
+.qr-section button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: 10px;
+  text-decoration: none;
+  text-align: left;
+  width: 100%;
+  max-width: 400%;
+  border: 1px solid #a5aeb6;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.qr-section button i {
+  margin-right: 5px;
+  color: #64aaf0;
+}
+
+.nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-color: #ffffff;
+  padding: 10px 0;
+}
+
+.nav-item {
+  list-style: none;
+  text-align: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333333; /* Ajusta el color según sea necesario */
+  font-size: 16px; /* Ajusta el tamaño de la fuente según sea necesario */
+}
+
+.nav-link i {
+  display: block;
+  margin-bottom: 5px; /* Espacio entre el icono y el texto */
+}
+
+.nav-link img {
+  width: 24px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: 24px; /* Ajusta el tamaño de la imagen según sea necesario */
+}
+
+.update-time {
+  text-align: center;
+  color: #555;
+  font-size: 11px;
+}
+
+#nombreApellido {
+  color: #7b7b7b;
+  font-size: 16px;
+}

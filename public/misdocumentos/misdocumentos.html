@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi ARG</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="misdocumentos.css" />
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=0">
+    <meta name="display" content="standalone">
+    <meta name="theme-color" content="#37bbed">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Mi Argentina">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="description" content="Regístrate para obtener tu DNI digital">
+    <link rel="apple-touch-icon" href="/Logo192.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/Logo192.png">
+  </head>
+  <body>  
+    <div class="container">
+      <header class="Docs_headerContainer"><div class="Docs_headerButtons"><a class="Docs_headerOps" href="/public/Inicio/incio.html"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23px" height="23px" viewBox="0 0 400.004 400.004" xml:space="preserve" fill="white"><g><path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315C400.004,190.438,392.251,182.686,382.688,182.686z"></path></g></svg></a><div class="Docs_headerTitle"><span class="Docs_headerTitleMi">Mis documentos</span></div></div><div class="Docs_headerLabelContainer"><p>Tus documentos importantes, en un solo lugar.</p><div class="Docs_headerLabelImgContainer"><img src="mis_documentos_header.fdbdda0b45204cb99c5a.jpg" alt="mis documentos header"></div></div></header>
+      <section class="main-content">
+        <div class="card">
+          <div class="card-header">
+            <img src="dnimisdocumentos.png" alt="DNI Icon" />
+            <span>Documento Nacional de Identidad (DNI)</span>
+          </div>
+          <div class="card-body">
+            <button id="verDniDigital" class="btn btn-primary">Ver DNI Digital</button>
+            <p>Información suministrada por <a href="#">RENAPER</a></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <p>
+              Recordá que podés solicitar el DNI para vos y para tus hijos y
+              tenerlo disponible en la App.
+            </p>
+            <button class="btn btn-outline-primary">Solicitar DNI Digital</button>
+            <p class="change-device">
+              <a href="#">Cambié o voy a cambiar de dispositivo</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <nav class="navbar fixed-bottom navbar-light bg-light">
+        <div class="container-fluid justify-content-around">
+          <a class="nav-link" href="#">Inicio</a>
+          <a class="nav-link" href="#">Novedades</a>
+          <a class="nav-link" href="#">Teléfonos</a>
+          <a class="nav-link" href="#">Tina</a>
+        </div>
+      </nav>
+    </div>
+    <script src="../utils/verifyLoggedUser.js"></script>
+    <script src="misdocumentos.js"></script>
+  </body>
+</html>

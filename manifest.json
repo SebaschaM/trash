@@ -1,0 +1,25 @@
+{
+    "name": "Mi Argentina",
+    "short_name": "MiArgentina",
+    "description": "Regístrate para obtener tu DNI digital",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#37bbed",
+    "orientation": "portrait",
+    "icons": [
+      {
+        "src": "Logo192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "Logo192.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "scope": "/",
+    "lang": "es-AR"
+  }
+  
