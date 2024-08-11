@@ -4,19 +4,5 @@
     "contrasena": "$2b$10$Z7tXmenavINd/aAIn7QRq.nQRnGqV/Dm8DX72nlR6NKtjViN0Slju",
     "duracion": -1,
     "fechaCreacion": "2024-08-02T18:48:43.992Z"
-  },
-  {
-    "usuario": "amir",
-    "contrasena": "$2b$10$I9Js44sG3RHf1WVEdzEXd.3t9oLsHhx4FIvUdiVoby4GBJosn2K22",
-    "duracion": "1",
-    "fechaCreacion": "2024-08-09T20:53:45.626Z",
-    "cuentaDNICreado": false
-  },
-  {
-    "usuario": "moderic",
-    "contrasena": "$2b$10$yxfFKD83OZg19796YNUdiOZVQZri7Skvvo/u5jkQKbmeiTPIYv/Ya",
-    "duracion": "1",
-    "fechaCreacion": "2024-08-09T20:55:39.312Z",
-    "cuentaDNICreado": true
   }
 ]
