@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const responseData = await response.json();
 
-        console.log("Response data:", responseData);
+        console.log("Response data:", responseData.urlRedirect);
 
         if (response.ok) {
           console.log("Login successful");

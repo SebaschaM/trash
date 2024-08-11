@@ -42,7 +42,7 @@ export const loginUser = async (req, res) => {
         return res.status(200).json({
           status: 200,
           message: "Administrador autenticado",
-          urlRedirect: "/public/Admin/admin.html",
+          urlRedirect: "/Admin/admin.html",
           nombreUsuario: usuarioEncontrado.usuario,
         });
       } else {
@@ -52,7 +52,7 @@ export const loginUser = async (req, res) => {
           return res.status(200).json({
             status: 200,
             message: "Usuario autenticado",
-            urlRedirect: "/public/Inicio/incio.html",
+            urlRedirect: "/Inicio/incio.html",
             dni: usuarioData.dniNumero,
             nombreUsuario: usuarioEncontrado.usuario,
           });
