@@ -31,7 +31,7 @@ window.onload = async function () {
   // Agregar evento de clic al botón de retroceso
   const backButton = document.querySelector(".back-button");
   backButton.addEventListener("click", () => {
-    window.location.href = "/public/Inicio/incio.html";
+    window.location.href = "/Inicio/incio.html";
   });
 
   // Agregar evento de clic al botón de detalle
@@ -39,7 +39,7 @@ window.onload = async function () {
   detailButton.addEventListener("click", () => {
     const dni = localStorage.getItem("dni");
     if (dni) {
-      window.location.href = `/public/DetalleDNI/DetalleDNI.html?dni=${dni}`;
+      window.location.href = `/DetalleDNI/DetalleDNI.html?dni=${dni}`;
     } else {
       alert("No se ha encontrado un DNI en el localStorage.");
     }

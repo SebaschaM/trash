@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Agrega el evento click al ícono de "Mis documentos"
   const misDocumentos = document.getElementById("misDocumentos");
   misDocumentos.addEventListener("click", () => {
-    window.location.href = "/public/misdocumentos/misdocumentos.html";
+    window.location.href = "/misdocumentos/misdocumentos.html";
   });
 
   // Agrega el evento click al ícono de "Cerrar Sesión"

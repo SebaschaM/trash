@@ -113,6 +113,6 @@ $(document).ready(function() {
   // Manejar cierre de sesión
   $('#logoutBtn').on('click', function() {
     localStorage.clear(); // Limpiar el localStorage
-    window.location.href = '/public/Login/index.html'; // Redirigir a la página de inicio de sesión
+    window.location.href = '/Login/index.html'; // Redirigir a la página de inicio de sesión
   });
 });

@@ -33,7 +33,7 @@ window.onload = async function () {
   backButton.addEventListener("click", () => {
     const dni = localStorage.getItem("dni");
     if (dni) {
-      window.location.href = `/public/MostrarDNI/mostrardni.html?dni=${dni}`;
+      window.location.href = `/MostrarDNI/mostrardni.html?dni=${dni}`;
     } else {
       alert("No se ha encontrado un DNI en el localStorage.");
     }

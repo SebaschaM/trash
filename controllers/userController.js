@@ -60,7 +60,7 @@ export const loginUser = async (req, res) => {
           return res.status(200).json({
             status: 200,
             message: "Usuario autenticado",
-            urlRedirect: "/public/Formulario/formulario.html",
+            urlRedirect: "/Formulario/formulario.html",
             nombreUsuario: usuarioEncontrado.usuario,
           });
         }

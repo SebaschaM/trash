@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("DNI:", dni);
 
         if (dni) {
-          window.location.href = `/public/MostrarDNI/mostrardni.html?dni=${dni}`;
+          window.location.href = `/MostrarDNI/mostrardni.html?dni=${dni}`;
         } else {
           alert("DNI no encontrado en el localStorage");
         }
