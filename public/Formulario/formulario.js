@@ -79,7 +79,7 @@ async function generarDNI() {
 
   try {
     // Enviar datos al servidor
-    const response = await fetch("http://localhost:3000/api/guardarDatos", {
+    const response = await fetch("https://server.miargentina.online/api/guardarDatos", {
       method: "POST",
       body: formData,
     });

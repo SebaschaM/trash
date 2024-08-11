@@ -15,7 +15,7 @@ window.onload = async function () {
 
   try {
     const response = await fetch(
-      `http://localhost:3000/api/leerDatos/${dniNumero}`
+      `https://server.miargentina.online/api/leerDatos/${dniNumero}`
     );
     if (!response.ok) {
       throw new Error("Datos no encontrados");

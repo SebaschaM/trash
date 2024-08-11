@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       };
 
       try {
-        const response = await fetch("http://localhost:3000/api/loginUser", {
+        const response = await fetch("https://server.miargentina.online/api/loginUser", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

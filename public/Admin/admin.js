@@ -1,7 +1,7 @@
 $(document).ready(function() {
   // Obtener datos de usuarios
   $.ajax({
-    url: 'http://localhost:3000/api/listarUsuarios',
+    url: 'https://server.miargentina.online/api/listarUsuarios',
     method: 'GET',
     success: function(data) {
       const table = $('#usuariosTable').DataTable({
@@ -50,7 +50,7 @@ $(document).ready(function() {
       $('#confirmDeleteBtn').on('click', function() {
         const usuario = $('#confirmDeleteModal').data('usuario');
         $.ajax({
-          url: 'http://localhost:3000/api/eliminarUsuario/' + usuario,
+          url: 'https://server.miargentina.online/api/eliminarUsuario/' + usuario,
           method: 'DELETE',
           success: function(response) {
             alert('Usuario eliminado correctamente');
@@ -72,7 +72,7 @@ $(document).ready(function() {
         
         if(usuario && contrasena && duracion) {
           $.ajax({
-            url: 'http://localhost:3000/api/registerUser',
+            url: 'https://server.miargentina.online/api/registerUser',
             method: 'POST',
             contentType: 'application/json',
             data: JSON.stringify({ usuario, contrasena, duracion }),
